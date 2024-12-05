@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleSignOut = async () => {
     try {
       await auth.signOut();
-      navigate('/auth');
+      navigate('/');
     } catch (error) {
       console.error('Error signing out:', error);
     }
